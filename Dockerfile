@@ -1,4 +1,4 @@
 FROM tomcat
-ADD https://gameoflife-rafi.s3.us-east-2.amazonaws.com/target/openmrs-2.4.0-SNAPSHOT-tests.jar /usr/local/tomcat/webapps
+ADD https://rafis3bucket.s3-us-west-1.amazonaws.com/gameoflife.war /usr/local/tomcat/webapps
 EXPOSE 8080
 CMD ["catalina.sh","run"]
